@@ -5,5 +5,5 @@
    * 2차정렬에 대한 맵리듀스/하둡 솔루션
 * [1. 2차 정렬: 개요](secondary_sort.adoc)
    * [2차 정렬문제 해결책](secondary_sort_solution.md)
-   * 2차정렬문제 해결책 - MapReduce of Hadoop 
+   * [2차정렬문제 해결책 - MapReduce of Hadoop](secondary_sort_solution-_mapreduce.adoc)
 
