@@ -7,6 +7,8 @@ This chapter provides a high-level overview of what Apache Spark is. If you are 
 아파치 스파크는 빠른 일반목적의 클러스터 컴퓨팅 플랫폼이다.
 
 On the speed side, Spark extends the popular MapReduce model to efficiently support more types of computations, including interactive queries and stream processing. Speed is important in processing large datasets, as it means the difference between exploring data interactively and waiting minutes or hours. One of the main features Spark offers for speed is the ability to run computations in memory, but the system is also more efficient than MapReduce for complex applications running on disk.
+속도면에서는 스파크는 맵리듀스 모델이 더 많은 타입의 계산을 효율적으로 지원하도록 확장한다. 여기에는 대화식 쿼리와 스트림 처리가 들어있다. 
+속도는 대용량 데이터 처리에서 중요하다. 즉 데이터를 대화식으로 탐색하는 것과 수 분 또는 수 시간을 기다른 것의 차이를 의미한다. 스파크의 주요 기능 중에 하나가는 메모리에서 계산하는 능력을 제공하는 것이지만, 디스크에서 복잡한 앱을 실행하는 맵리듀스보다 시스템이 더욱 효과적이다.
 
 On the generality side, Spark is designed to cover a wide range of workloads that previously required separate distributed systems, including batch applications, iterative algorithms, interactive queries, and streaming. By supporting these workloads in the same engine, Spark makes it easy and inexpensive to combine different processing types, which is often necessary in production data analysis pipelines. In addition, it reduces the management burden of maintaining separate tools.
 
