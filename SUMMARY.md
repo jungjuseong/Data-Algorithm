@@ -1,4 +1,4 @@
 # Summary
 
-* [Spark 소개](spark_intro.adoc)
+* [1. Spark로 데이터 분석](spark_intro.adoc)
 
