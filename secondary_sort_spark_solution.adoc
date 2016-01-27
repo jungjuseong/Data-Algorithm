@@ -39,7 +39,7 @@ p =>  [9,   6,  7,   0,   3]
 ```
 
 
-### Option 1: Secondary Sorting in Memory
+## Option 1: Secondary Sorting in Memory
 
 Since Spark has a very powerful and high-level API, I will present the entire solution in a single Java class. The Spark API is built upon the basic abstraction concept of the RDD (resilient distributed data set). To fully utilize Spark’s API, we have to understand RDDs. An RDD<T> (i.e., an RDD of type T) object represents an immutable, partitioned collection of elements (of type T) that can be operated on in parallel. The RDD<T> class contains the basic MapReduce operations available on all RDDs, such as map(), filter(), and persist(), while the JavaPairRDD<K,V> class contains MapReduce operations such as mapToPair(), flatMapToPair(), and groupByKey(). In addition, Spark’s PairRDDFunctions contains operations available only on RDDs of key-value pairs, such as reduce(), groupByKey(), and join(). (For details on RDDs, see Spark’s API and Appendix B of this book.) Therefore, JavaRDD<T> is a list of objects of type T, and JavaPairRDD<K,V> is a list of objects of type Tuple2<K,V> (where each tuple represents a key-value pair).
 
@@ -342,10 +342,21 @@ Example 1-17. Step 10: Output final result
 
 ## Spark Sample Run
 
-As far as Spark/Hadoop is concerned, you can run a Spark application in three different modes:1
-Standalone modeThis is the default setup. You start the Spark master on a master node and a “worker” on every slave node, and submit your Spark application to the Spark master.YARN client modeIn this mode, you do not start a Spark master or worker nodes. Instead, you submit the Spark application to YARN, which runs the Spark driver in the client Spark process that submits the application.YARN cluster modeIn this mode, you do not start a Spark master or worker nodes. Instead, you submit the Spark application to YARN, which runs the Spark driver in the ApplicationMaster in YARN.
-Next, we will cover how to submit the secondary sort application in the standalone and YARN cluster modes.
+As far as Spark/Hadoop is concerned, you can run a Spark application in three different modes:
 
+Standalone mode
+
+This is the default setup. You start the Spark master on a master node and a “worker” on every slave node, and submit your Spark application to the Spark master.
+
+YARN client mode
+
+In this mode, you do not start a Spark master or worker nodes. Instead, you submit the Spark application to YARN, which runs the Spark driver in the client Spark process that submits the application.
+
+YARN cluster mode
+
+In this mode, you do not start a Spark master or worker nodes. Instead, you submit the Spark application to YARN, which runs the Spark driver in the ApplicationMaster in YARN.
+
+Next, we will cover how to submit the secondary sort application in the standalone and YARN cluster modes.
 
 
 ### Running Spark in standalone mode
@@ -353,8 +364,7 @@ Next, we will cover how to submit the secondary sort application in the standalo
 The following subsections provide the input, script, and log output of a sample run of our secondary sort application in Spark’s standalone mode.
 
 
-
-###HDFS input
+### HDFS input
 ```
 # hadoop fs -cat /mp/timeseries.txt
 x,2,9
@@ -527,8 +537,7 @@ $SPARK_HOME/bin/spark-submit \
   $INPUT
 ```
 
-
-### Option #2: Secondary Sorting Using the Spark Framework
+## Option #2: Secondary Sorting Using the Spark Framework
 
 In the solution for option #1, we sorted reducer values in memory (using Java’s Collections.sort() method), which might not scale if the reducer values will not fit in a commodity server’s memory. Next we will implement option #2 for the MapReduce/Hadoop framework. We cannot achieve this in the current Spark (Spark-1.1.0) framework, because currently Spark’s shuffle is based on a hash, which is different from MapReduce’s sort-based shuffle. So, you should implement sorting explicitly using an RDD operator. If we had a partitioner by a natural key (name) that preserved the order of the RDD, that would be a viable solution—for example, if we sorted by (name, time), we would get:
 
@@ -562,6 +571,5 @@ To support secondary sorting in Spark, you may extend the JavaPairRDD class and 
 - https://github.com/tresata/spark-sorted[]
 
 Chapter 2 provides a detailed implementation of the Secondary Sort design pattern using the MapReduce and Spark frameworks.
-
 
 For details, see the Spark documentation.
