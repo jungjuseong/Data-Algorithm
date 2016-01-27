@@ -4,7 +4,7 @@ This chapter provides a high-level overview of what Apache Spark is. If you are 
 
 ## What Is Apache Spark?
 
-Apache Spark is a cluster computing platform designed to be fast and general-purpose.
+아파치 스파크는 빠른 일반목적의 클러스터 컴퓨팅 플랫폼이다.
 
 On the speed side, Spark extends the popular MapReduce model to efficiently support more types of computations, including interactive queries and stream processing. Speed is important in processing large datasets, as it means the difference between exploring data interactively and waiting minutes or hours. One of the main features Spark offers for speed is the ability to run computations in memory, but the system is also more efficient than MapReduce for complex applications running on disk.
 
