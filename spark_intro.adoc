@@ -1,2 +1,3 @@
 # Spark 소개
 
+This chapter provides a high-level overview of what Apache Spark is. If you are already familiar with Apache Spark and its components, feel free to jump ahead to Chapter 2.
