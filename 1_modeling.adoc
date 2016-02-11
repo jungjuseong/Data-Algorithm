@@ -13,12 +13,12 @@ image:1.1.1.jpg[alt=""]
 Linear systems are rather rare in nature. However, they are relatively easy to manipulate using linear algebra techniques and often approximate in an acceptable manner the nonlinear systems around their operating point.
 
 
-## 1.2. 기계 시스템
+## 1.2. 로봇 기계 시스템
 
 The fundamental principle of dynamics allows us to easily find the state equations of mechanical systems (such as robots). The resulting calculations are relatively complicated for complex systems and the use of computer algebra systems may prove to be useful. In order to obtain the state equations of a mechanical system composed of several subsystems S1, S2, . . . , Sm, assumed to be rigid, we follow three steps:
 
 
-1) Obtaining the differential equations. For each subsystem Sk, with mass m and inertial matrix J, the following relations must be applied:
+1) 미분방정식 얻기. For each subsystem Sk, with mass m and inertial matrix J, the following relations must be applied:
 
 image:1.2.1.jpg[alt=""]
 
