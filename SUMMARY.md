@@ -8,4 +8,5 @@
    * [2차정렬문제 해결책 - MapReduce of Hadoop](secondary_sort_solution-_mapreduce.adoc)
    * [2차정렬문제의 Spark 해결책](secondary_sort_spark_solution.adoc)
 * [Cognitive Robotics](cognotive_robotics.adoc/Cognotive Robotics)
+   * 1. When Robots do wrong
 
