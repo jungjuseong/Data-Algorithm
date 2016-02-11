@@ -44,5 +44,13 @@ A mechanical system whose dynamics can be described by the relation image:1.2.4.
 
 ## 1.3. 서보모터
 
-A mechanical system is controlled by forces or torques and obeys a dynamic model that depends on many poorly known coefficients. This same mechanical system represented by a kinematic model is controlled by positions, velocities or accelerations. The kinematic model depends on well-known geometric coefficients and is a lot easier to put into equations. In practice, we move from a dynamic model to its kinematic equivalent by adding servomotors. In summary, a servomotor is a direct current motor with an electrical control circuit and a sensor (of the position, velocity or acceleration). The control circuit computes the voltage u to give to the motor in order for the value measured by the sensor corresponds to the setpoint w. In practice, the signal w is generally given in the form of a square wave called pulse-width modulation (PWM) ). There are three types of servomotors:
+A mechanical system is controlled by forces or torques and obeys a dynamic model that depends on many poorly known coefficients. This same mechanical system represented by a kinematic model is controlled by positions, velocities or accelerations. The kinematic model depends on well-known geometric coefficients and is a lot easier to put into equations. In practice, we move from a dynamic model to its kinematic equivalent by adding servomotors. 
+
+In summary, a servomotor is a direct current motor with an electrical control circuit and a sensor (of the position, velocity or acceleration). The control circuit computes the voltage u to give to the motor in order for the value measured by the sensor corresponds to the setpoint w. In practice, the signal w is generally given in the form of a square wave called pulse-width modulation (PWM) ). There are three types of servo motors:
+
+– 위치 제어 장치. The sensor measures the position (or the angle) x of the motor and the control rule is expressed as u = k (x − w). If k is large, we may conclude that x img w;
+
+– 속도 제어 장치. The sensor measures the velocity (or the angular velocity) img of the motor and the control rule is expressed as images/ch1_Inline_4_8.gif If k is large, we have images/ch1_Inline_4_9.gif
+
+– 가속 제어 장치. The sensor measures the acceleration (tangential or angular) img of the motor and the control rule is expressed as images/ch1_Inline_4_10.gif If k is large, we have img img w.
 
