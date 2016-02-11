@@ -29,4 +29,13 @@ quiver(Mx,My,VX,VY,’black’);
 ```
 This program can also be found in the file field_syslin.m. We may recognize in this figure the characteristic spaces (dotted lines) of the linear application. We can also see that one eigenvalue is positive and another eigenvalue is negative. This can be verified by analyzing the matrix of our linear application given by:
 
+image:2.1.4.jpg[alt=""]
 
+
+Its eigenvalues are images/ch2_Inline_3_11.gif and –images/ch2_Inline_3_11.gif and the associated eigenvectors are:
+
+image:2.1.5.jpg[alt=""]
+
+Let us note that the vector x represented in the figure is not an eigenvector, since x and f (x) are not collinear. However, all the vectors that belong to the characteristic subspaces (represented as dotted lines in the figure) are eigenvectors. Along the characteristic subspace associated with the negative eigenvalue, the field vectors tend to point toward 0, whereas these vectors point to infinity along the characteristic subspace associated with the positive eigenvalue.
+
+For an autonomous system (in other words, one without input), the evolution is given by the equation images/ch2_Inline_3_8.gif. When f is a function of images/ch2_Inline_3_9.gif to images/ch2_Inline_3_10.gif, we can obtain a graphical representation of f by drawing the vector field associated with f. The graph will then allow us to better understand the behavior of our system.
