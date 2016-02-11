@@ -1,2 +1,102 @@
-# [1. When Robots do wrong] (when_robots_do_wrong.adoc)
+# Chapter 1 로봇이 잘못되면?
+
+Already mankind has begun to embrace the "로봇 사회".” In 2005 the
+government of South Korea announced its intention to have a robot
+in every household by 2020. And the Japanese Robot Association predicts
+that Next Generation Robots will generate up to $ 65 billion of economic activity by 2025. Also in Japan eﬀorts have been under way for some time
+to ensure that, before long, elderly members of the population will routinely
+have robots to take care of them. Meanwhile, at many universities and other
+research centres, robots of just about every ﬂavour are a hot topic.
+
+## 1.1  INTRODUCTION
+
+Clearly robots will soon be assisting us in many diﬀerent aspects of our
+lives, becoming our partners in various practical and companionable ways
+and entertaining us. An early example in the ﬁeld of entertainment was a
+ballroom dancer robot that was unveiled in 2005 at the World Expo in Japan.
+It did not have usable legs but instead moved on three wheels.
+
+Let us consider the following scenario, perhaps ten years from now, when
+dancing robots do have moveable legs and possess the skills for a variety
+of dance steps, such as waltz, foxtrot, rumba, ... One evening a young lady
+named Laura is at a dance, partnering such a robot. The band strikes up with
+the music for a cha cha cha but performs it so badly that the robot mistakes
+the music for a tango. So Laura and her robot partner are holding each other
+but dancing at cross purposes, and very soon they fall over. The robot lands
+on top of Laura and, being quite heavy, breaks both of her legs. Laura’s father
+is furious, and calls his lawyers, telling them to commence legal proceedings
+immediately and “throw the book at them.”
+
+But at whom should his lawyers throw the book? Should it be the dance
+hall, or the online store that sold the robot to the dance hall, or the manufac-
+turer of the robot, or the robot’s designers, or should it be the independent
+software house that programmed the robot’s tune recognition software, or
+the band leader, or even the whole band of musicians for playing the cha cha
+cha so badly?
+
+Some months later the trial opens with all of these as defendants. Expert
+witnesses are called - experts on everything from robot software to motion
+sensor engineers to the principals of dance music academies. What do you
+think would be the result of the trial? I’ll tell you - the lawyers do very nicely
+thank you.
+
+As technology advances, the proliferation of robots and their applications
+will take place in parallel with increases in their complexity. One of the dis-
+advantages of those increases will be a corresponding increase in the number
+of robot accidents and wrongdoings. How will legal systems be able to cope
+with all the resulting court cases? In fact, will they be able to cope? The
+answer, surely, is “No.”
+
+In this chapter, I am going to addresses the questions: What should hap-
+pen when something goes wrong? Who, or what, is responsible? And above
+all, how best should society deal with an ever-increasing number of robot
+accidents. All developed countries will be faced with these problems, and all
+countries need to adopt legally and ethically sound approaches to ﬁnding
+solutions to them.
+
+
+## 1.2  BLAME THE ROBOT?
+
+Even though a robot is a manmade object, one superﬁcially reasonable way
+toapportionblameforarobotaccidentorwrongdoingwouldbetoblamethe
+robot itself. Many people support this idea because robots are autonomous.
+
+I shall discuss three possible approaches to this particular argument:
+
+a. A robot should be regarded as a quasi-person; (사람에 준하는)
+b. A robot should be regarded as a quasi-animal; and (동물에 준하는)
+c. A robot should be regarded as neither, but simply as a product,a manmade object, period. (상품으로)
+
+### 1.2.1  The Robot as a Quasi-Person
+
+As computer software, and therefore robots, gain in intelligence, many of us
+will come to accept that their mental capabilities have a humanlike quality.
+Leon Wein argues that a robot’s capacity to make decisions and act on them
+enables them to:
+
+[note]
+"operate in a manner identical to that of humans ... society may have no
+choice but to accept machines as “legal persons” with rights as well as
+duties."
+
+These duties will include the obligation to act in a manner that would be
+considered reasonable if it were human behaviour. The same obligation ap-
+plies to corporations, which, despite not being human, have legal rights and
+responsibilities and can be punished for their transgressions and their negli-
+gence. This possibility, punishing corporations, points the way to the concept
+of punishing robots, by ﬁning them for example.
+
+### 1.2.2  The Robot as a Quasi-Animal
+
+Some researchers argue that because robots, like animals, are autonomous,
+society can justify blaming robots for their accidents.
+
+For the purposes of attributing legal responsibility for accidents and
+wrongdoings, the analogy of robots as domesticated animals is a concept
+that has gained a fair measure of support in the recent literature. Richard Kel-
+ley and his colleagues at the University of Nevada draw an analogy between
+the diﬀerent breeds of dogs and the diﬀerent functions performed by robots.
+For example, a Roomba vacuum cleaner robot is analogous to a breed of dog
+that is largely harmless, but an unmanned aircraft drone, especially if it is
+armed, is analogous to a dangerous breed. And for “dangerous” robots Kelly
 
