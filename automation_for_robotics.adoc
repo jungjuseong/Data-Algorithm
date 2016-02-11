@@ -1,2 +1,19 @@
-# Automation for Robotics
+# Introduction
 
+## I.1. State representation
+
+Biological, economic and other mechanical systems surrounding us can often be described by a differential equation such as:
+
+images/Introduction_image_1_3.jpg
+
+under the hypothesis that the time t in which the system evolves is continuous [JAU 05]. The vector u(t) is the input (or control) of the system. Its value may be chosen arbitrarily for all t. The vector y(t) is the output of the system and can be measured with a certain degree of accuracy. The vector x(t) is called the state of the system. It represents the memory of the system, in other words the information needed by the system in order to predict its own future, for a known input u(t). The first of the two equations is called the evolution equation. It is a differential equation that enables us to know where the state (t) is headed knowing its value at the present moment t and the control u(t) that we are currently exerting. The second equation is called the observation equation. It allows us to calculate the output vector y(t), knowing the state and control at time t. Note, however, that, unlike the evolution equation, this equation is not a differential equation as it does not involve the derivatives of the signals. The two equations given above form the state representation of the system.
+
+It is sometimes useful to consider a discrete time k, with  images/Introduction_Inline_2_2.gif where images/Introduction_Inline_2_3.gif is the set of integers. If, for instance, the universe is being considered as a computer, it is possible to consider that the time k is discrete and synchronized to the clock of the microprocessor. Discrete-time systems often respect a recurrence equation such as:
+
+images/Introduction_image_3_1.jpg
+
+The first objective of this book is to understand the concept of state representation through numerous exercises. For this, we will consider, in Chapter 1, a large number of varied exercises and show how to reach a state representation. We will then show, in Chapter 2, how to simulate a given system on a computer using its state representation.
+
+The second objective of this book is to propose methods to control the systems described by state equations. In other words, we will attempt to build automatic machines (in which humans are practically not involved, except to give orders, or setpoints), called controllers capable of domesticating (changing the behavior in a desired direction) the systems being considered. For this, the controller will have to compute the inputs u(t) to be applied to the system from the (more or less noisy) knowledge of the outputs y(t) and from the setpoints w(t) (see Figure I.1).
+
+From the point of view of the user, the system, referred to as a closed-loop system, with input w(t) and output y(t), will have a suitable behavior. We will say that we have controlled the system. With this objective of control, we will, in a first phase, only look at linear systems, in other words when the functions f and g are assumed linear. Thus, in the continuoustime case, the state equations of the system are written as:
