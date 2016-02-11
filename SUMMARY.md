@@ -11,4 +11,5 @@
    * [1. When Robots do wrong](when_robots_do_wrong.adoc)
 * [Automation for Robotics](automation_for_robotics.adoc)
    * [1. Modeling](1_modeling.adoc)
+   * 2. Simulation
 
