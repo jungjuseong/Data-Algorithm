@@ -57,8 +57,8 @@ solutions to them.
 
 ## 1.2  BLAME THE ROBOT?
 
-Even though a robot is a manmade object, one superﬁcially reasonable way
-toapportionblameforarobotaccidentorwrongdoingwouldbetoblamethe
+Even though a robot is a man-made object, one superﬁcially reasonable way
+to apportion blame for a robot accident or wrong doing would be to blame the
 robot itself. Many people support this idea because robots are autonomous.
 
 I shall discuss three possible approaches to this particular argument:
@@ -70,7 +70,7 @@ c. A robot should be regarded as neither, but simply as a product,a manmade obje
 ### 1.2.1  The Robot as a Quasi-Person
 
 As computer software, and therefore robots, gain in intelligence, many of us
-will come to accept that their mental capabilities have a humanlike quality.
+will come to accept that their mental capabilities have a human-like quality.
 Leon Wein argues that a robot’s capacity to make decisions and act on them
 enables them to:
 
@@ -96,6 +96,7 @@ wrongdoings, the analogy of robots as domesticated animals is a concept
 that has gained a fair measure of support in the recent literature. Richard Kel-
 ley and his colleagues at the University of Nevada draw an analogy between
 the diﬀerent breeds of dogs and the diﬀerent functions performed by robots.
+
 For example, a Roomba vacuum cleaner robot is analogous to a breed of dog
 that is largely harmless, but an unmanned aircraft drone, especially if it is
 armed, is analogous to a dangerous breed. And for “dangerous” robots Kelly
