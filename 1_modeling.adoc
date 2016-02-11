@@ -18,12 +18,29 @@ Linear systems are rather rare in nature. However, they are relatively easy to m
 The fundamental principle of dynamics allows us to easily find the state equations of mechanical systems (such as robots). The resulting calculations are relatively complicated for complex systems and the use of computer algebra systems may prove to be useful. In order to obtain the state equations of a mechanical system composed of several subsystems S1, S2, . . . , Sm, assumed to be rigid, we follow three steps:
 
 
-1) 미분방정식 얻기. For each subsystem Sk, with mass m and inertial matrix J, the following relations must be applied:
+1) 미분방정식 얻기. 
+
+For each subsystem Sk, with mass m and inertial matrix J, the following relations must be applied:
 
 image:1.2.1.jpg[alt=""]
 
 where the fi are the forces acting on the subsystem Sk, Mfi represents the torque created by the force fi on Sk, with respect to its center. The vector a represents the tangential acceleration of Sk and the vector images/ch1_image_2_4a.gif represents the angular acceleration of Sk. After decomposing these 2m vectorial equations according to their components, we obtain 6m scalar differential equations such that some of them might be degenerate.
 
-2) Removing the components of the internal forces. In differential equations there are the so-called bonding forces, which are internal to the whole mechanical system, even though they are external to each subsystem composing it. They represent the action of a subsystem Sk on another subsystem Sℓ. Following the action–reaction principle, the existence of such a force, denoted by fk,ℓ , implies the existence of another force fℓ,k, representing the action of Sℓ on Sk, such that images/ch1_Inline_3_9.gif Through a formal manipulation of the differential equations and by taking into account the equations due to the action-reaction principle, it is possible to remove the internal forces. The resulting number of differential equations has to be reduced to the number n of degrees of freedom q1, . . . , qn of the system.
+2) 내부 힘 성분들을 제거. 
 
-3) Obtaining the state equations. We then have to isolate the second derivative images/ch1_Inline_3_6.gif from the set of n differential equations in such a manner to obtain a vectorial relation such as:
+In differential equations there are the so-called bonding forces, which are internal to the whole mechanical system, even though they are external to each subsystem composing it. They represent the action of a subsystem Sk on another subsystem Sℓ. Following the action–reaction principle, the existence of such a force, denoted by fk,ℓ , implies the existence of another force fℓ,k, representing the action of Sℓ on Sk, such that images/ch1_Inline_3_9.gif Through a formal manipulation of the differential equations and by taking into account the equations due to the action-reaction principle, it is possible to remove the internal forces. The resulting number of differential equations has to be reduced to the number n of degrees of freedom q1, . . . , qn of the system.
+
+3) 상태 방정식 얻기. 
+
+We then have to isolate the second derivative images/ch1_Inline_3_6.gif from the set of n differential equations in such a manner to obtain a vectorial relation such as:
+
+image:1.2.2.jpg[alt=""]
+
+where u is the vector of external forces that are not derived from a potential (in other words, those which we apply to the system). The state equations are then written as:
+
+image:1.2.3.jpg[alt=""]
+
+A mechanical system whose dynamics can be described by the relation image:1.2.4.gif[alt=""] will be referred to as holonomic. For a holonomic system, q and image:1.2.5.png[alt=""] are thus independent. If there is a so-called non-holonomic constraint that links the two of them (of the form image:1.2.7.png[alt=""] the system will be referred to as non-holonomic. Such systems may be found for instance in mobile robots with wheels [LAU 01]. Readers interested in more details on the modeling of mechanical systems may consult [KHA 07].
+
+
+
