@@ -9,4 +9,5 @@
    * [2차정렬문제의 Spark 해결책](secondary_sort_spark_solution.adoc)
 * [Cognitive Robotics](cognitive_robotics.adoc)
    * [1. When Robots do wrong](when_robots_do_wrong.adoc)
+* Automation for Robotics
 
